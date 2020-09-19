@@ -1,0 +1,222 @@
+{'Bronx': 'Highbridge'}
+{'Bronx': 'Port Morris'}
+{'Bronx': 'Clason Point'}
+{'Bronx': 'Eastchester'}
+{'Bronx': 'Kingsbridge'}
+{'Bronx': 'Woodlawn'}
+{'Bronx': 'University Heights'}
+{'Bronx': 'Allerton'}
+{'Bronx': 'Spuyten Duyvil'}
+{'Bronx': 'Morris Heights'}
+{'Bronx': 'Mott Haven'}
+{'Bronx': 'Longwood'}
+{'Bronx': 'Concourse'}
+{'Bronx': 'Mount Eden'}
+{'Bronx': 'City Island'}
+{'Bronx': 'Williamsbridge'}
+{'Bronx': 'Soundview'}
+{'Bronx': 'Co-op City'}
+{'Bronx': 'Parkchester'}
+{'Bronx': 'North Riverdale'}
+{'Bronx': 'Bronxdale'}
+{'Bronx': 'Riverdale'}
+{'Bronx': 'Norwood'}
+{'Bronx': 'Claremont Village'}
+{'Bronx': 'Fordham'}
+{'Bronx': 'Concourse Village'}
+{'Bronx': 'Mount Hope'}
+{'Bronx': 'Wakefield'}
+{'Bronx': 'Morris Park'}
+{'Bronx': 'Tremont'}
+{'Bronx': 'Hunts Point'}
+{'Bronx': 'Pelham Bay'}
+{'Bronx': 'Throgs Neck'}
+{'Bronx': 'West Farms'}
+{'Bronx': 'Morrisania'}
+{'Bronx': 'Pelham Gardens'}
+{'Bronx': 'Belmont'}
+{'Bronx': 'East Morrisania'}
+{'Bronx': 'Fieldston'}
+{'Bronx': 'Baychester'}
+{'Bronx': 'Melrose'}
+{'Bronx': 'Van Nest'}
+{'Bronx': 'Schuylerville'}
+{'Bronx': 'Olinville'}
+{'Bronx': 'Edenwald'}
+{'Bronx': 'Unionport'}
+{'Bronx': 'Westchester Square'}
+{'Bronx': 'Castle Hill'}
+{'Brooklyn': 'Clinton Hill'}
+{'Brooklyn': 'Bedford-Stuyvesant'}
+{'Brooklyn': 'Sunset Park'}
+{'Brooklyn': 'South Slope'}
+{'Brooklyn': 'Williamsburg'}
+{'Brooklyn': 'Fort Greene'}
+{'Brooklyn': 'Windsor Terrace'}
+{'Brooklyn': 'Flatbush'}
+{'Brooklyn': 'Prospect-Lefferts Gardens'}
+{'Brooklyn': 'Greenpoint'}
+{'Brooklyn': 'Prospect Heights'}
+{'Brooklyn': 'Park Slope'}
+{'Brooklyn': 'Brooklyn Heights'}
+{'Brooklyn': 'Bushwick'}
+{'Brooklyn': 'Carroll Gardens'}
+{'Brooklyn': 'Gowanus'}
+{'Brooklyn': 'Flatlands'}
+{'Brooklyn': 'Cobble Hill'}
+{'Brooklyn': 'Boerum Hill'}
+{'Brooklyn': 'Crown Heights'}
+{'Brooklyn': 'East Flatbush'}
+{'Brooklyn': 'Gravesend'}
+{'Brooklyn': 'East New York'}
+{'Brooklyn': 'Sheepshead Bay'}
+{'Brooklyn': 'Fort Hamilton'}
+{'Brooklyn': 'Bensonhurst'}
+{'Brooklyn': 'Brighton Beach'}
+{'Brooklyn': 'Cypress Hills'}
+{'Brooklyn': 'Kensington'}
+{'Brooklyn': 'Bay Ridge'}
+{'Brooklyn': 'Columbia St'}
+{'Brooklyn': 'Borough Park'}
+{'Brooklyn': 'Downtown Brooklyn'}
+{'Brooklyn': 'Vinegar Hill'}
+{'Brooklyn': 'DUMBO'}
+{'Brooklyn': 'Red Hook'}
+{'Brooklyn': 'Canarsie'}
+{'Brooklyn': 'Sea Gate'}
+{'Brooklyn': 'Brownsville'}
+{'Brooklyn': 'Midwood'}
+{'Brooklyn': 'Navy Yard'}
+{'Brooklyn': 'Dyker Heights'}
+{'Brooklyn': 'Manhattan Beach'}
+{'Brooklyn': 'Bergen Beach'}
+{'Brooklyn': 'Coney Island'}
+{'Brooklyn': 'Bath Beach'}
+{'Brooklyn': 'Mill Basin'}
+{'Brooklyn': 'Gerritsen Beach'}
+{'Manhattan': 'Midtown'}
+{'Manhattan': "Hell's Kitchen"}
+{'Manhattan': 'Upper West Side'}
+{'Manhattan': 'Chinatown'}
+{'Manhattan': 'West Village'}
+{'Manhattan': 'East Harlem'}
+{'Manhattan': 'Inwood'}
+{'Manhattan': 'East Village'}
+{'Manhattan': 'Harlem'}
+{'Manhattan': 'Lower East Side'}
+{'Manhattan': 'Chelsea'}
+{'Manhattan': 'Kips Bay'}
+{'Manhattan': 'Nolita'}
+{'Manhattan': 'Upper East Side'}
+{'Manhattan': 'Washington Heights'}
+{'Manhattan': 'SoHo'}
+{'Manhattan': 'Tribeca'}
+{'Manhattan': 'NoHo'}
+{'Manhattan': 'Morningside Heights'}
+{'Manhattan': 'Flatiron District'}
+{'Manhattan': 'Roosevelt Island'}
+{'Manhattan': 'Greenwich Village'}
+{'Manhattan': 'Little Italy'}
+{'Manhattan': 'Financial District'}
+{'Manhattan': 'Murray Hill'}
+{'Manhattan': 'Gramercy'}
+{'Manhattan': 'Theater District'}
+{'Manhattan': 'Battery Park City'}
+{'Manhattan': 'Two Bridges'}
+{'Manhattan': 'Civic Center'}
+{'Manhattan': 'Stuyvesant Town'}
+{'Manhattan': 'Marble Hill'}
+{'Queens': 'Long Island City'}
+{'Queens': 'Jamaica'}
+{'Queens': 'Woodside'}
+{'Queens': 'Flushing'}
+{'Queens': 'Sunnyside'}
+{'Queens': 'Ridgewood'}
+{'Queens': 'Middle Village'}
+{'Queens': 'Ditmars Steinway'}
+{'Queens': 'Astoria'}
+{'Queens': 'Queens Village'}
+{'Queens': 'Rockaway Beach'}
+{'Queens': 'Forest Hills'}
+{'Queens': 'Corona'}
+{'Queens': 'Elmhurst'}
+{'Queens': 'St. Albans'}
+{'Queens': 'Rego Park'}
+{'Queens': 'Maspeth'}
+{'Queens': 'Briarwood'}
+{'Queens': 'Jackson Heights'}
+{'Queens': 'Bayside'}
+{'Queens': 'Arverne'}
+{'Queens': 'Kew Gardens'}
+{'Queens': 'College Point'}
+{'Queens': 'East Elmhurst'}
+{'Queens': 'Glendale'}
+{'Queens': 'Richmond Hill'}
+{'Queens': 'Woodhaven'}
+{'Queens': 'Ozone Park'}
+{'Queens': 'Bay Terrace'}
+{'Queens': 'Whitestone'}
+{'Queens': 'Fresh Meadows'}
+{'Queens': 'South Ozone Park'}
+{'Queens': 'Kew Gardens Hills'}
+{'Queens': 'Jamaica Estates'}
+{'Queens': 'Bellerose'}
+{'Queens': 'Far Rockaway'}
+{'Queens': 'Springfield Gardens'}
+{'Queens': 'Neponsit'}
+{'Queens': 'Laurelton'}
+{'Queens': 'Holliswood'}
+{'Queens': 'Edgemere'}
+{'Queens': 'Rosedale'}
+{'Queens': 'Cambria Heights'}
+{'Queens': 'Howard Beach'}
+{'Queens': 'Jamaica Hills'}
+{'Queens': 'Hollis'}
+{'Queens': 'Bayswater'}
+{'Queens': 'Douglaston'}
+{'Queens': 'Belle Harbor'}
+{'Queens': 'Breezy Point'}
+{'Queens': 'Little Neck'}
+{'Staten Island': 'St. George'}
+{'Staten Island': 'Tompkinsville'}
+{'Staten Island': 'Emerson Hill'}
+{'Staten Island': 'Shore Acres'}
+{'Staten Island': 'Arrochar'}
+{'Staten Island': 'Clifton'}
+{'Staten Island': 'Graniteville'}
+{'Staten Island': 'Stapleton'}
+{'Staten Island': 'Tottenville'}
+{'Staten Island': 'Mariners Harbor'}
+{'Staten Island': 'Concord'}
+{'Staten Island': 'Woodrow'}
+{'Staten Island': 'Eltingville'}
+{'Staten Island': 'Lighthouse Hill'}
+{'Staten Island': 'West Brighton'}
+{'Staten Island': 'Dongan Hills'}
+{'Staten Island': 'Castleton Corners'}
+{'Staten Island': 'Todt Hill'}
+{'Staten Island': 'Great Kills'}
+{'Staten Island': 'Silver Lake'}
+{'Staten Island': 'Randall Manor'}
+{'Staten Island': 'Grymes Hill'}
+{'Staten Island': 'New Brighton'}
+{'Staten Island': 'Midland Beach'}
+{'Staten Island': 'Richmondtown'}
+{'Staten Island': 'Howland Hook'}
+{'Staten Island': 'New Dorp Beach'}
+{'Staten Island': "Prince's Bay"}
+{'Staten Island': 'South Beach'}
+{'Staten Island': 'Oakwood'}
+{'Staten Island': 'Huguenot'}
+{'Staten Island': 'Port Richmond'}
+{'Staten Island': 'Westerleigh'}
+{'Staten Island': 'Fort Wadsworth'}
+{'Staten Island': 'New Springville'}
+{'Staten Island': 'Arden Heights'}
+{'Staten Island': "Bull's Head"}
+{'Staten Island': 'Grant City'}
+{'Staten Island': 'New Dorp'}
+{'Staten Island': 'Willowbrook'}
+{'Staten Island': 'Rosebank'}
+{'Staten Island': 'Bay Terrace, Staten Island'}
+{'Staten Island': 'Rossville'}
