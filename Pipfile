@@ -17,6 +17,7 @@ pandas = "*"
 uvicorn = "*"
 plotly = "*"
 tensorflow = "*"
+scikit-learn = "==0.22.2.post1"
 
 [requires]
 python_version = "3.7"
