@@ -17,6 +17,8 @@ class Item(BaseModel):
     borough: str = Field(..., example = 'Manhattan')
     neighbourhood: str = Field(..., example = 'Midtown')
     room_type: str = Field(..., example = 'Entire home/apt')
+    latitude: str = Field(..., example = 40)
+    longitude: str = Field(..., example = -73)
 
     def to_df(self):
         """Convert pydantic object to pandas dataframe with 1 row."""
