@@ -5,6 +5,7 @@ import app.api.encode as ec
 
 from fastapi import APIRouter
 import pandas as pd
+from sklearn import RandomizedSearchCV
 from pydantic import BaseModel, Field, validator
 
 log = logging.getLogger(__name__)
@@ -55,7 +56,9 @@ async def predict(item: Item):
     # Predict
     model = joblib.load('./assets/random_forest.joblib')
     
-    y_pred = model.predict(X_new)
+    y_pred = model.predict()
+    y_pred_proba = random.random() / 2 + 0.5
     return {
-        'prediction': y_pred
+        'prediction': y_pred,
+        'probability': y_pred_proba,
     }
