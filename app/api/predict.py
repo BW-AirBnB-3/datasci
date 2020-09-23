@@ -5,7 +5,7 @@ import app.api.encode as ec
 
 from fastapi import APIRouter
 import pandas as pd
-from sklearn import RandomizedSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 from pydantic import BaseModel, Field, validator
 
 log = logging.getLogger(__name__)
@@ -18,8 +18,8 @@ class Item(BaseModel):
     borough: str = Field(..., example = 'Manhattan')
     neighbourhood: str = Field(..., example = 'Midtown')
     room_type: str = Field(..., example = 'Entire home/apt')
-    latitude: str = Field(..., example = 40)
-    longitude: str = Field(..., example = -73)
+    latitude: float = Field(..., example = 40)
+    longitude: float = Field(..., example = -73)
 
     def to_df(self):
         """Convert pydantic object to pandas dataframe with 1 row."""
@@ -56,9 +56,11 @@ async def predict(item: Item):
     # Predict
     model = joblib.load('./assets/random_forest.joblib')
     
-    y_pred = model.predict()
+    X_new = pd.DataFrame([[2, 47, 0, 40, -73]])
+    
+    y_pred = model.predict(X_new)
     y_pred_proba = random.random() / 2 + 0.5
     return {
-        'prediction': y_pred,
+        'prediction': y_pred[0],
         'probability': y_pred_proba,
     }
