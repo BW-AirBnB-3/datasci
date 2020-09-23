@@ -51,7 +51,6 @@ async def predict(item: Item):
     
     item.encode()
     X_new = item.to_df()
-    X_new = encode(X_new)
     
     # Predict
     model = joblib.load('./assets/model.joblib')
