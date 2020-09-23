@@ -24,4 +24,4 @@ async def viz(statecode: str):
 
     ny_map = gobj.Figure(data = [data],layout = layout)
 
-    iplot(ny_map)
+    return ny_map
