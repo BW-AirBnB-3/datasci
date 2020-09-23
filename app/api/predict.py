@@ -1,7 +1,7 @@
 import logging
 import random
 import joblib
-from encode import encode
+from app.api.encode import encode
 
 from fastapi import APIRouter
 import pandas as pd
