@@ -18,7 +18,7 @@ async def viz(statecode: str):
                 text= df['neighbourhood_group'],
                 z=df['price'],
                 marker = dict(line = dict(color = 'rgb(255,255,255)',width = 1)),
-                colorbar = {'title':'Colorbar Title','len' 0.25,'lenmode':'fraction'})
+                colorbar = {'title':'Colorbar Title','len': 0.25,'lenmode':'fraction'})
 
     layout = dict(geo = dict(scope='usa'))
 
