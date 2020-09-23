@@ -53,7 +53,7 @@ async def predict(item: Item):
     X_new = item.to_df()
     
     # Predict
-    model = joblib.load('./assets/model.joblib')
+    model = joblib.load('./assets/random_forest.joblib')
     
     y_pred = model.predict(X_new)
     return {
