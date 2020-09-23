@@ -26,6 +26,9 @@ class Item(BaseModel):
 
     def encode(self):
         bdict, ndict, rdict = ec.encode_dict()
+        self.borough = bdict[self.borough]
+        self.neighbourhood = ndict[self.neighbourhood]
+        self.room_type = rdict[self.room_type]
 
 
 @router.post('/predict')
@@ -45,7 +48,8 @@ async def predict(item: Item):
 
     Replace the placeholder docstring and fake predictions with your own model.
     """
-
+    
+    item.encode()
     X_new = item.to_df()
     X_new = encode(X_new)
     

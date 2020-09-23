@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException
 router = APIRouter()
 
 @router.get('/viz')
-async def viz(statecode: str):
+async def viz():
     path = './assets/listings.csv'
 
     df = pd.read_csv(path)
