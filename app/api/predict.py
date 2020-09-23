@@ -1,7 +1,7 @@
 import logging
 import random
 import joblib
-from app.api.encode import encode
+import app.api.encode as ec
 
 from fastapi import APIRouter
 import pandas as pd
@@ -24,11 +24,8 @@ class Item(BaseModel):
         """Convert pydantic object to pandas dataframe with 1 row."""
         return pd.DataFrame([dict(self)])
 
-    # @validator('x1')
-    # def x1_must_be_positive(cls, value):
-    #     """Validate that x1 is a positive number."""
-    #     assert value > 0, f'x1 == {value}, must be > 0'
-    #     return value
+    def encode(self):
+        bdict, ndict, rdict = ec.encode_dict()
 
 
 @router.post('/predict')

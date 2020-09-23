@@ -1,8 +1,11 @@
 import pandas as pd
 import plotly.graph_objs as gobj
 from plotly.offline import iplot
+from fastapi import APIRouter, HTTPException
 
-@router.get('/viz/{statecode}')
+router = APIRouter()
+
+@router.get('/viz')
 async def viz(statecode: str):
     path = './assets/listings.csv'
 
