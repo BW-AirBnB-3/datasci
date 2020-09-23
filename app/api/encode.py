@@ -2,6 +2,7 @@ import pandas as pd
 
 def encode_dict():
     df = pd.read_csv('./assets/listings.csv')
+    df.rename(columns = {'neighbourhood_group': 'borough'}, inplace = True)
     
     # Encode
     blist1 = pd.factorize(df['borough'], sort = True)[1]
