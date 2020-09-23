@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.graph_objs as gobj
 from plotly.offline import iplot
 
-path = './listings.csv'
+path = './assets/listings.csv'
 
 df = pd.read_csv(path)
 
