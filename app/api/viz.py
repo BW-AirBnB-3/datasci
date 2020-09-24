@@ -1,25 +1,30 @@
 import pandas as pd
 import plotly.graph_objs as gobj
 from plotly.offline import iplot
+from fastapi import APIRouter, HTTPException
 
-path = './listings.csv'
+router = APIRouter()
 
-df = pd.read_csv(path)
+@router.get('/viz')
+async def viz():
+    path = './assets/listings.csv'
 
-cols = ['neighbourhood_group','price']
+    df = pd.read_csv(path)
 
-data = dict(type = 'choropleth',
-            locations = df['neighbourhood_group'],
-            locationmode = 'USA-states',
-            autocolorscale = False,
-            colorscale = 'RdBu',
-            text= df['neighbourhood_group'],
-            z=df['price'],
-            marker = dict(line = dict(color = 'rgb(255,255,255)',width = 1)),
-            colorbar = {'title':'Colorbar Title','len':0.25,'lenmode':'fraction'})
+    cols = ['neighbourhood_group','price']
 
-layout = dict(geo = dict(scope='usa'))
+    data = dict(type = 'choropleth',
+                locations = df['neighbourhood_group'],
+                locationmode = 'USA-states',
+                autocolorscale = False,
+                colorscale = 'RdBu',
+                text= df['neighbourhood_group'],
+                z=df['price'],
+                marker = dict(line = dict(color = 'rgb(255,255,255)',width = 1)),
+                colorbar = {'title':'Colorbar Title','len': 0.25,'lenmode':'fraction'})
 
-ny_map = gobj.Figure(data = [data],layout = layout)
+    layout = dict(geo = dict(scope='usa'))
 
-iplot(ny_map)
+    ny_map = gobj.Figure(data = [data],layout = layout)
+
+    return ny_map

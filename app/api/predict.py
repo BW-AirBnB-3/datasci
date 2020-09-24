@@ -1,10 +1,11 @@
 import logging
 import random
 import joblib
-from encode import encode
+import app.api.encode as ec
 
 from fastapi import APIRouter
 import pandas as pd
+from sklearn.model_selection import RandomizedSearchCV
 from pydantic import BaseModel, Field, validator
 
 log = logging.getLogger(__name__)
@@ -17,18 +18,18 @@ class Item(BaseModel):
     borough: str = Field(..., example = 'Manhattan')
     neighbourhood: str = Field(..., example = 'Midtown')
     room_type: str = Field(..., example = 'Entire home/apt')
-    latitude: str = Field(..., example = 40)
-    longitude: str = Field(..., example = -73)
+    latitude: float = Field(..., example = 40)
+    longitude: float = Field(..., example = -73)
 
     def to_df(self):
         """Convert pydantic object to pandas dataframe with 1 row."""
         return pd.DataFrame([dict(self)])
 
-    # @validator('x1')
-    # def x1_must_be_positive(cls, value):
-    #     """Validate that x1 is a positive number."""
-    #     assert value > 0, f'x1 == {value}, must be > 0'
-    #     return value
+    def encode(self):
+        bdict, ndict, rdict = ec.encode_dict()
+        self.borough = bdict[self.borough]
+        self.neighbourhood = ndict[self.neighbourhood]
+        self.room_type = rdict[self.room_type]
 
 
 @router.post('/predict')
@@ -48,14 +49,18 @@ async def predict(item: Item):
 
     Replace the placeholder docstring and fake predictions with your own model.
     """
-
+    
+    item.encode()
     X_new = item.to_df()
-    X_new = encode(X_new)
     
     # Predict
-    model = joblib.load('./assets/model.joblib')
+    model = joblib.load('./assets/random_forest.joblib')
+    
+    X_new = pd.DataFrame([[2, 47, 0, 40, -73]])
     
     y_pred = model.predict(X_new)
+    y_pred_proba = random.random() / 2 + 0.5
     return {
-        'prediction': y_pred
+        'prediction': y_pred[0],
+        'probability': y_pred_proba,
     }
