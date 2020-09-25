@@ -57,7 +57,7 @@ async def predict(item: Item):
     X_new = item.to_df()
     
     # Predict
-    model = keras.models.load_model('./assets/EarlyStopping+L2_WeightDecay/saved_model.pb')
+    model = keras.models.load_model('./assets/EarlyStopping+L2_WeightDecay')
     
     y_pred = model.predict(X_new)
     y_pred_proba = random.random() / 2 + 0.5
