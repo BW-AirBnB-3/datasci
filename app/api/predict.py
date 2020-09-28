@@ -7,6 +7,7 @@ from fastapi import APIRouter
 import pandas as pd
 from sklearn.model_selection import RandomizedSearchCV
 from pydantic import BaseModel, Field, validator
+from tensorflow import keras
 
 log = logging.getLogger(__name__)
 router = APIRouter()
@@ -38,9 +39,11 @@ async def predict(item: Item):
     Make random baseline predictions for classification problem 🔮
 
     ### Request Body
-    - `x1`: positive float
-    - `x2`: integer
-    - `x3`: string
+    - `borough`: string
+    - `neighbourhood`: string
+    - `room_type`: string
+    - `latitude`: float
+    - `longitude`: float
 
     ### Response
     - `prediction`: boolean, at random
@@ -54,9 +57,7 @@ async def predict(item: Item):
     X_new = item.to_df()
     
     # Predict
-    model = joblib.load('./assets/random_forest.joblib')
-    
-    X_new = pd.DataFrame([[2, 47, 0, 40, -73]])
+    model = keras.models.load_model('./assets/EarlyStopping+L2_WeightDecay')
     
     y_pred = model.predict(X_new)
     y_pred_proba = random.random() / 2 + 0.5
